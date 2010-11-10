@@ -13,7 +13,7 @@ Module NorvigSpellChecker
     ' def words(text): 
     Function words(ByVal text)
         ' return re.findall('[a-z]+', text.lower()) 
-        Return From match In Regex.Matches(text.ToLower(), "[a-z]+").Cast(Of Match)() Select match.Value
+        Return From match In Regex.Matches(text.ToLower(), "[a-z]+") Select match.Value
     End Function
 
 
